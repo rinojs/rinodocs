@@ -18,6 +18,23 @@ npm run dev
 
 ## 📢 Notice
 
+Please use number on name of your markdown files. Then you can list them in the order that you want.
+Markdown file name example:
+
+```
+1. somemd1.md
+2. somemd2.md
+3. somemd2.md
+```
+
+Then output will be:
+
+```
+somemd1.md
+somemd2.md
+somemd2.md
+```
+
 ## 📖 Documentation for theme development
 
 - [Rino.js Introduction](https://rinojs.org/documents/introduction.html)

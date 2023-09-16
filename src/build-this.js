@@ -59,8 +59,9 @@ async function buildThis(mddir, distdir, publicdir, domain, name)
 
             const mdFiles = files.filter(file => path.extname(file) === '.md');
             const sortedMdFiles = mdFiles.sort();
+            const fixedMdFiles = sortedMdFiles.map(file => file.replace(/^\d+\.\s*/, ''));
             const filepathList = sortedMdFiles.map(file => path.join(mddir, file));
-            const filenameList = mdFiles.map(file => path.parse(file).name);
+            const filenameList = fixedMdFiles.map(file => path.parse(file).name);
             const sitemapList = [];
 
             sitemapList.push(`${ domain }`);
@@ -87,6 +88,8 @@ async function buildThis(mddir, distdir, publicdir, domain, name)
                 markdown = markdown.replaceAll("{{", "&#123;&#123;");
                 markdown = markdown.replaceAll("}}", "&#125;&#125;");
                 let md_text = markdown.replace(/(<([^>]+)>)/gi, '').substring(0, 150);
+                md_text = md_text.replaceAll(`'`, ``)
+                md_text = md_text.replaceAll(`"`, ``)
 
                 theme = await rino.buildPage({
                     filename: themePath,
