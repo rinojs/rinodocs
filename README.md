@@ -7,7 +7,7 @@ Documentation tool with Rino! This tool will automatically turn your markdown fi
 The recommended way to start your documentation project:
 
 ```
-npm create rinodocs
+npm create rinodocs@latest
 ```
 
 Build web pages from markdown in `./src/mds`:
