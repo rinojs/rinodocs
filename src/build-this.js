@@ -59,7 +59,7 @@ async function buildThis(mddir, distdir, publicdir, domain, name)
 
             const mdFiles = files.filter(file => path.extname(file) === '.md');
             const sortedMdFiles = mdFiles.sort();
-            const fixedMdFiles = sortedMdFiles.map(file => file.replace(/^\d+\.\s*/, ''));
+            const fixedMdFiles = sortedMdFiles.map(file => file.replace(/^\d+\.\s*/, '').trim());
             const filepathList = sortedMdFiles.map(file => path.join(mddir, file));
             const filenameList = fixedMdFiles.map(file => path.parse(file).name);
             const sitemapList = [];
