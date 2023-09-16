@@ -13,18 +13,6 @@ npm create rinodocs@latest
 Build web pages from markdown in `./src/mds`:
 
 ```
-npm run build
-```
-
-How to test your pages:
-
-```
-npm run view
-```
-
-For theme development:
-
-```
 npm run dev
 ```
 

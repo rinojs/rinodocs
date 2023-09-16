@@ -3,6 +3,7 @@ const fs = require('fs');
 const express = require("express");
 const cors = require('cors');
 const http = require('http');
+const { injectReload } = require('./inject-reload');
 
 async function createServer(root, port)
 {
@@ -33,6 +34,7 @@ async function createServer(root, port)
                     }
                     else
                     {
+                        data = await injectReload(data, port)
                         res.send(data);
                     }
                 });
@@ -42,6 +44,7 @@ async function createServer(root, port)
                 let fileext = path.extname(filePath);
                 if (fileext === '.html')
                 {
+                    data = await injectReload(data, port)
                     res.send(data);
                 }
                 else

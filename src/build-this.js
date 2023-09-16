@@ -5,17 +5,11 @@ const { marked } = require('marked');
 const { copyAssets } = require('./assets');
 const { emptyDirectory } = require('./empty-directory');
 
-let domain = "https://YOUR_DOMAIN/";
-let name = "Name_OF_YOUR_SITE";
-
-if (domain[domain.length - 1] != "/") domain += '/';
-
-async function build()
+async function buildThis(mddir, distdir, publicdir, domain, name)
 {
     try 
     {
         console.log(`
-
 
     .::::::::::::::::::::----.
     =*********************###:
@@ -44,24 +38,19 @@ async function build()
         `);
 
         let rino = new Rino();
-        let directoryPath = path.resolve(__dirname, "./mds/")
-        let distdir = path.resolve(`./dist/`);
-        let publicdir = path.resolve(`./public/`);
 
         if (!fs.existsSync(distdir))
         {
             await fs.promises.mkdir(distdir);
         }
-        else
-        {
-            console.log(`Removing old build...`);
-            emptyDirectory(distdir, publicdir);
-            console.log(`Copying assets now...`);
-            await copyAssets(publicdir, distdir);
-            console.log(`Copying assets is done...`);
-        }
 
-        fs.readdir(directoryPath, async (error, files) =>
+        console.log(`Removing old build...`);
+        emptyDirectory(distdir, publicdir);
+        console.log(`Copying assets now...`);
+        await copyAssets(publicdir, distdir);
+        console.log(`Copying assets is done...`);
+
+        fs.readdir(mddir, async (error, files) =>
         {
             if (error)
             {
@@ -70,7 +59,7 @@ async function build()
 
             const mdFiles = files.filter(file => path.extname(file) === '.md');
             const sortedMdFiles = mdFiles.sort();
-            const filepathList = sortedMdFiles.map(file => path.join(directoryPath, file));
+            const filepathList = sortedMdFiles.map(file => path.join(mddir, file));
             const filenameList = mdFiles.map(file => path.parse(file).name);
             const sitemapList = [];
 
@@ -84,10 +73,6 @@ async function build()
 
             let themePath = path.resolve(__dirname, "./pages/index.tot").toString();
             let theme = null;
-            let html = "";
-            let start = 0;
-            let end = 0;
-            let target = "";
             let size = filepathList.length;
 
             for (let i = 0; i < size; i++)
@@ -99,6 +84,8 @@ async function build()
                 });
 
                 markdown = marked.parse(markdown);
+                markdown = markdown.replaceAll("{{", "&#123;&#123;");
+                markdown = markdown.replaceAll("}}", "&#125;&#125;");
                 let md_text = markdown.replace(/(<([^>]+)>)/gi, '').substring(0, 150);
 
                 theme = await rino.buildPage({
@@ -109,51 +96,24 @@ async function build()
                         desc: md_text,
                         url: `${ domain }${ filenameList[i] }.html`,
                         sitename: name,
-                        pageList: filenameList
+                        pageList: filenameList,
+                        content: markdown
                     }
                 });
 
-                html = theme.html;
-                let result = "";
+                let htmlfilename = path.join(distdir, `${ filenameList[i] }.html`)
+                if (i == 0) htmlfilename = path.join(distdir, `index.html`)
 
-                while (html.length > 0)
-                {
-                    start = html.indexOf("{{") + 2;
-                    end = await findEnd(html, start);
+                await fs.promises.writeFile(htmlfilename, theme.html);
 
-                    if (start == 1 || end == -1)
-                    {
-                        result = result + html;
-                        break;
-                    }
-
-                    result = result + html.substring(0, start - 2);
-                    target = html.substring(start, end).trim();
-                    html = html.substring(end + 2);
-
-                    if (target.substring(0, 8) == "@content")
-                    {
-                        result = result + markdown;
-                        break;
-                    }
-                    else
-                    {
-                        result = result + `{{ ${ target } }}`;
-                    }
-                }
-
-                let htmlfilename = path.resolve(`./dist/${ filenameList[i] }.html`)
-                if (i == 0) htmlfilename = path.resolve(`./dist/index.html`)
-
-                await fs.promises.writeFile(htmlfilename, result);
 
                 console.log(`Building ${ i + 1 }/${ size } pages`);
             }
 
             if (theme)
             {
-                if (theme.js) await fs.promises.writeFile(path.resolve(`./dist/main.js`), theme.js);
-                if (theme.css) await fs.promises.writeFile(path.resolve(`./dist/style.css`), theme.css);
+                if (theme.js) await fs.promises.writeFile(path.join(distdir, `main.js`), theme.js);
+                if (theme.css) await fs.promises.writeFile(path.join(distdir, `style.css`), theme.css);
             }
 
             console.log("Build is completed!");
@@ -195,4 +155,4 @@ async function findEnd(content, start)
     return end;
 }
 
-build();
+module.exports = { buildThis }
