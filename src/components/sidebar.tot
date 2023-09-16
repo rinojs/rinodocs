@@ -1,0 +1,93 @@
+<d:html>
+<div class="column" id="sidebar">
+    <aside class="menu">
+        {{(
+            result = `<ul class="menu-list">`
+            let list = data.pageList;
+            for(let i = 0; i < list.length; i++)
+            {
+                if(i == 0)
+                {
+                    result = result + `
+                        <li><a href="/">${ list[i] }</a></li>
+                    `;
+                }
+                else
+                {
+                    result = result + `
+                        <li><a href="/${ list[i] }.html">${ list[i] }</a></li>
+                    `;
+                }
+            }
+
+            result = result + `</ul>`
+        )}}
+    </aside>
+</div>
+<div id="cover" @click="showSidebar()">
+</div>
+</d:html>
+<d:js>
+</d:js>
+<d:css>
+#cover {
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+    position: fixed;
+    z-index: 9997;
+}
+
+#sidebar,
+#sidebar a
+{
+    color: #FFFFFF;
+}
+
+#sidebar ul li a:hover
+{
+    background-color: #2962FF;
+}
+
+#sidebar ul li a:active
+{
+    background-color: #0D47A1;
+}
+
+#sidebar{
+    top: 0;
+    position: fixed;
+    z-index: 9998;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: #2979FF;
+    margin-bottom: 20px;
+    min-width: 300px;
+    max-width: 300px;
+    padding: 0px;
+    overflow-y: auto !important;
+}
+
+.menu {
+    padding: 20px;
+    min-height: 100%;
+}
+
+@media all and (max-width: 1200px) {
+    #sidebar {
+        height: 100vh;
+        min-width: 0px;
+        display: none;
+    }
+}
+
+@media all and (min-width: 1200px) {  
+    #cover {
+        display: none !important;
+    }
+}
+</d:css>

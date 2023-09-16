@@ -1,0 +1,18 @@
+<d:html>
+<link rel="stylesheet" href="/bulma.min.css">
+<script type="text/javascript" src="/main.js"></script>
+<link rel="stylesheet" href="/style.css">
+<link href='https://fonts.googleapis.com' rel='preconnect'/>
+<link crossorigin='crossorigin' href='https://fonts.gstatic.com' rel='preconnect'/>
+<link href='https://fonts.googleapis.com/css2?family=Noto+Sans&amp;family=Noto+Sans+Mono&amp;display=swap' rel='stylesheet'/>
+<meta name="description" content="{{ @data.desc }}" />
+<meta name="og:title" content="{{ @data.title }}" />
+<meta name="og:description" content="{{ @data.desc }}" />
+<meta name="og:site_name" content="{{ @data.sitename }}" />
+<meta name="og:url" content="{{ @data.url }}" />
+<meta name="og:image" content=""/> 
+</d:html>
+<d:js>
+</d:js>
+<d:css>
+</d:css>

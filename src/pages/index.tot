@@ -1,0 +1,190 @@
+<d:html>
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ @preload, ./src/preloads/preload.tot }}
+
+        <script type="text/javascript" src="main.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        {{ @component, ./src/components/head.tot }}
+
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>{{ @data.title }}</title>
+    </head>
+    <body>
+        <div class="mainview columns">
+            {{ @component, ./src/components/sidebar.tot }}
+            <main class="column">
+                {{ @component, ./src/components/header.tot }}
+                {{ @content }}
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                <p>sagpiwjngrpwjnh aodihjn'dp;akfln adp'fgjmo pdfgjpdfg j gjpdfsgjpsdfgjdsfpgjdsfopgj dsf dospgdfojg padfojgpadfg</p>
+                {{ @component, ./src/components/rino-footer.tot }}
+            </main>
+        </div>
+    </body>
+</html>
+</d:html>
+<d:js>
+</d:js>
+<d:css>
+body {
+    margin: 0px;
+    overflow-wrap: break-word;
+    font-family: 'Noto Sans', monaco, Consolas, "Lucida Console", Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+    background-color: #E0E0E0;
+    min-height: 100vh;
+}
+
+.block {
+    display: block !important;
+}
+
+.mainview {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0px auto 0px auto !important;
+}
+
+main {
+    position: relative;
+    left: 300px;
+    right: 0;
+    min-height: 100%;
+    max-width: 900px;
+    background-color: #FFFFFF;
+    padding: 30px !important;
+}
+
+img {
+    margin: 0px auto;
+    max-width: 100%;
+}
+
+
+@media all and (max-width: 1200px) {
+    body {
+        word-break: break-all;
+    }
+
+    .mainview {
+        width: 100%;
+        max-width: 100% !important;
+    }
+
+    main {
+        left: 0;
+        width: 100%;
+        max-width: 100% !important;
+    }
+}
+</d:css>

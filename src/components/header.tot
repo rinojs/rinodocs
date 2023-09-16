@@ -1,0 +1,129 @@
+<d:html>
+<div class="header columns">
+    <div class="column">
+        <a role="button" id="menu-button" class="menu-button" @click="showSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+</div>
+<hr>
+</d:html>
+<d:js>
+async function showSidebar()
+{
+    const sidebar = document.getElementById("sidebar");
+    const sidebarCover = document.getElementById("cover");
+    const menuButton = document.getElementById("menu-button");
+
+    if(sidebar.classList.contains("block"))
+    {
+        sidebar.classList.remove("block");
+        sidebarCover.classList.remove("block");
+        menuButton.classList.remove("active");
+    }
+    else
+    {
+        sidebar.classList.add("block");
+        sidebarCover.classList.add("block");
+        menuButton.classList.add("active");
+    }
+}
+</d:js>
+<d:css>
+.menu-button
+{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+}
+
+.menu-button span
+{
+    left: 50%;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translate(-50%, -50%);
+}
+
+.menu-button span:nth-child(1)
+{
+    top: calc(50% - 5px);
+}
+
+.menu-button span:nth-child(2)
+{
+    top: 50%;
+}
+
+.menu-button span:nth-child(3)
+{
+    top: calc(50% + 5px);
+}
+
+.menu-button.active span
+{
+    left: calc(50% - 2px);
+}
+
+.menu-button.active span:nth-child(1) {
+    transform: translateX(-5px) translateY(5px) rotate(45deg);
+}
+
+.menu-button.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-button.active span:nth-child(3) {
+    transform: translateX(-5px) translateY(-5px) rotate(-45deg);
+}
+
+.menu-button-cover
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    z-index: 1000000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-button-cover:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-button-cover:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menu-button-wrapper
+{
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    vertical-align: top;
+}
+
+
+@media all and (max-width: 1200px) {
+    .menu-button
+    {
+        display: block;
+    }
+}
+</d:css>

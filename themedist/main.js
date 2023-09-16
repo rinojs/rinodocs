@@ -1,0 +1,1 @@
+async function showSidebar(){const s=document.getElementById("sidebar"),e=document.getElementById("cover"),t=document.getElementById("menu-button");s.classList.contains("block")?(s.classList.remove("block"),e.classList.remove("block"),t.classList.remove("active")):(s.classList.add("block"),e.classList.add("block"),t.classList.add("active"))}
