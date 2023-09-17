@@ -120,7 +120,7 @@ async function showSidebar()
 }
 
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1000px) {
     .menu-button
     {
         display: block;

@@ -24,12 +24,12 @@ async function dev()
     const wss = await createWSS(server);
     const url = `http://localhost:${ port }`
 
-    setTimeout(async () =>
-    {
-        await openBrowser(url);
-    }, 333);
+    await openBrowser(url);
 
-    await createWatcher(directoryPath, distdir, publicdir, domain, name, src, port, wss);
+    await createWatcher(publicdir, src, port, wss, async () =>
+    {
+        await buildThis(directoryPath, distdir, publicdir, domain, name);
+    });
 }
 
 dev();

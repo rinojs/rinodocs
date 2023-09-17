@@ -82,7 +82,7 @@
     min-height: 100%;
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1000px) {
     #sidebar {
         height: 100vh;
         min-width: 0px;
@@ -90,7 +90,7 @@
     }
 }
 
-@media all and (min-width: 1200px) {  
+@media all and (min-width: 1000px) {  
     #cover {
         display: none !important;
     }

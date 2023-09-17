@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "node src/dev.js"
+    "dev": "node src/dev.js",
+    "sitemap": "node src/sitemap.js"
   },
   "dependencies": {
     "chokidar": "^3.5.3",

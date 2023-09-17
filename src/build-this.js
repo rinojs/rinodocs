@@ -9,34 +9,6 @@ async function buildThis(mddir, distdir, publicdir, domain, name, locale = "")
 {
     try 
     {
-        console.log(`
-
-    .::::::::::::::::::::----.
-    =*********************###:
-    =*********************###:
-    =********======+******###:
-    =******##      =******###:
-    =******##      =******###:
-    =******##      =******###:
-    =******##......=******###:
-    =*********************###+==
-    =***********************###*
-    =********+++++++++******###*
-    =******##        .******###*
-    =******##        .******###*
-    =******##        .******###*
-    =******##        .******###*
-    =******##        .******###*
-    -+++++*##         ++++++###*
-
-    Rino Docs! Your free opensource markdown documentation tool!
-
-    Built with Rino! Fast learning, preprocessing, intuitive web framework!
-
-    Please support us!
-
-        `);
-
         let rino = new Rino();
 
         if (!fs.existsSync(distdir))
@@ -74,18 +46,9 @@ async function buildThis(mddir, distdir, publicdir, domain, name, locale = "")
 
                 return 0;
             });
-            const fixedMdFiles = sortedMdFiles.map(file => file.replace(/^\d+\.\s*/, '').trim());
+            const onlyFilenames = sortedMdFiles.map(file => path.parse(file).name);
             const filepathList = sortedMdFiles.map(file => path.join(mddir, file));
-            const filenameList = fixedMdFiles.map(file => path.parse(file).name);
-            const sitemapList = [];
-
-            sitemapList.push(`${ domain }`);
-            for (let i = 1; i < filenameList; i++)
-            {
-                sitemapList.push(`${ domain }${ filenameList[i] }.html`);
-            }
-
-            if (sitemapList && sitemapList.length > 0) await rino.generateSitemapFile(sitemapList, path.join(distdir, "sitemap.xml"));
+            const onlyNames = onlyFilenames.map(file => file.replace(/^\d+\.\s*/, '').trim());
 
             let themePath = path.resolve(__dirname, "./pages/index.tot").toString();
             let theme = null;
@@ -110,17 +73,17 @@ async function buildThis(mddir, distdir, publicdir, domain, name, locale = "")
                     filename: themePath,
                     data:
                     {
-                        title: filenameList[i],
+                        title: onlyNames[i],
                         desc: md_text,
-                        url: `${ domain }${ filenameList[i] }.html`,
+                        url: `${ domain }${ onlyNames[i] }.html`,
                         sitename: name,
-                        pageList: filenameList,
+                        pageList: onlyNames,
                         locale: locale,
                         content: markdown
                     }
                 });
 
-                let htmlfilename = path.join(distdir, `${ filenameList[i] }.html`)
+                let htmlfilename = path.join(distdir, `${ onlyNames[i] }.html`)
                 if (i == 0) htmlfilename = path.join(distdir, `index.html`)
 
                 await fs.promises.writeFile(htmlfilename, theme.html);

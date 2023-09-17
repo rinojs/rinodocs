@@ -16,7 +16,15 @@ Build web pages from markdown in `./src/mds`:
 npm run dev
 ```
 
+Build sitemap:
+
+```
+npm run sitemap
+```
+
 ## 📢 Notice
+
+Make sure you setup domain and name of site for dev.js and sitemap.js.
 
 Please use number on name of your markdown files. Then you can list them in the order that you want.
 Markdown file name example:

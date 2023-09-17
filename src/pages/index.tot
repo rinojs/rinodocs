@@ -134,10 +134,6 @@ img {
 
 
 @media all and (max-width: 1000px) {
-    body {
-        word-break: break-all;
-    }
-
     .mainview {
         width: 100%;
         max-width: 100% !important;
