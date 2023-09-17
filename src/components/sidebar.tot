@@ -2,6 +2,11 @@
 <div class="column" id="sidebar">
     <aside class="menu">
         {{(
+            let locale = data.locale;
+
+            if(locale) locale = "/" + locale;
+            else locale = "";
+
             result = `<ul class="menu-list">`
             let list = data.pageList;
             for(let i = 0; i < list.length; i++)
@@ -9,13 +14,13 @@
                 if(i == 0)
                 {
                     result = result + `
-                        <li><a href="/">${ list[i] }</a></li>
+                        <li><a href="${locale}/">${ list[i] }</a></li>
                     `;
                 }
                 else
                 {
                     result = result + `
-                        <li><a href="/${ list[i] }.html">${ list[i] }</a></li>
+                        <li><a href="${locale}/${ list[i] }.html">${ list[i] }</a></li>
                     `;
                 }
             }

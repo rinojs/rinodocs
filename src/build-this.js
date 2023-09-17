@@ -5,7 +5,7 @@ const { marked } = require('marked');
 const { copyAssets } = require('./assets');
 const { emptyDirectory } = require('./empty-directory');
 
-async function buildThis(mddir, distdir, publicdir, domain, name)
+async function buildThis(mddir, distdir, publicdir, domain, name, locale = "")
 {
     try 
     {
@@ -115,6 +115,7 @@ async function buildThis(mddir, distdir, publicdir, domain, name)
                         url: `${ domain }${ filenameList[i] }.html`,
                         sitename: name,
                         pageList: filenameList,
+                        locale: locale,
                         content: markdown
                     }
                 });
