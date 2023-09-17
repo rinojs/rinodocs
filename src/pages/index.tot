@@ -100,7 +100,7 @@ body {
 }
 
 .mainview {
-    max-width: 1200px;
+    max-width: 1000px;
     min-height: 100vh;
     margin: 0px auto 0px auto !important;
 }
@@ -110,7 +110,7 @@ main {
     left: 300px;
     right: 0;
     min-height: 100%;
-    max-width: 900px;
+    max-width: 700px;
     background-color: #FFFFFF;
     padding: 30px !important;
 }
@@ -121,7 +121,7 @@ img {
 }
 
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1000px) {
     body {
         word-break: break-all;
     }
