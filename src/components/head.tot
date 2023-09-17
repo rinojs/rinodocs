@@ -2,9 +2,9 @@
 <link rel="stylesheet" href="/bulma.min.css">
 <script type="text/javascript" src="/main.js"></script>
 <link rel="stylesheet" href="/style.css">
-<link href='https://fonts.googleapis.com' rel='preconnect'/>
-<link crossorigin='crossorigin' href='https://fonts.gstatic.com' rel='preconnect'/>
-<link href='https://fonts.googleapis.com/css2?family=Noto+Sans&amp;family=Noto+Sans+Mono&amp;display=swap' rel='stylesheet'/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Noto+Sans+Mono:wght@500&family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
 <meta name="description" content="{{ @data.desc }}" />
 <meta name="og:title" content="{{ @data.title }}" />
 <meta name="og:description" content="{{ @data.desc }}" />
