@@ -101,6 +101,12 @@ code
     font-family:  'Noto Sans Mono', monaco, Consolas, "Lucida Console", Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace !important;
 }
 
+pre
+{
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
 .block {
     display: block !important;
 }
