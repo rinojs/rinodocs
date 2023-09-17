@@ -143,34 +143,4 @@ async function buildThis(mddir, distdir, publicdir, domain, name)
     }
 }
 
-async function findEnd(content, start)
-{
-    if (!content) return -1;
-    let end = -1;
-    let depth = 1;
-
-    for (let i = start; i < content.length; i++)
-    {
-        if (content[i] === "{" && content[i + 1] === "{")
-        {
-            depth++;
-            i++;
-        }
-        else if (content[i] === "}" && content[i + 1] === "}")
-        {
-            depth--;
-
-            if (depth === 0)
-            {
-                end = i;
-                break;
-            }
-
-            i++;
-        }
-    }
-
-    return end;
-}
-
 module.exports = { buildThis }
