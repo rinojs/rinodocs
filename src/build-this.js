@@ -58,7 +58,22 @@ async function buildThis(mddir, distdir, publicdir, domain, name)
             }
 
             const mdFiles = files.filter(file => path.extname(file) === '.md');
-            const sortedMdFiles = mdFiles.sort();
+            const sortedMdFiles = mdFiles.sort((a, b) =>
+            {
+                const numA = parseInt(a, 10);
+                const numB = parseInt(b, 10);
+
+                if (numA < numB)
+                {
+                    return -1;
+                }
+                else if (numA > numB)
+                {
+                    return 1;
+                }
+
+                return 0;
+            });
             const fixedMdFiles = sortedMdFiles.map(file => file.replace(/^\d+\.\s*/, '').trim());
             const filepathList = sortedMdFiles.map(file => path.join(mddir, file));
             const filenameList = fixedMdFiles.map(file => path.parse(file).name);
